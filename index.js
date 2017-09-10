@@ -78,6 +78,19 @@ function showExample(img, btn) {
                 document.getElementsByClassName(img)[1].style.visibility = "hidden";
             }
             
+            alert("prototype not created");
+            break;
+        
+    //---CONTACTS:MESSAGING---
+    } else if (btn === "contacts-msg") {
+            console.log("contacts:messaging btn clicked");
+            
+            //check for visible imgs
+            if(visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
             //set attribute with prototype file
             gif_class[1].setAttribute("src", "share-gif02.gif");
             
@@ -85,7 +98,6 @@ function showExample(img, btn) {
             document.getElementsByClassName(img)[1].style.visibility = "visible";
             break;
         }
-    }
     
     
     console.log("showExample() complete");
