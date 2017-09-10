@@ -67,6 +67,23 @@ function showExample(img, btn) {
             
             alert("prototype not created");
             break;
+            
+        //---FEED:UPLOAD TRANSITION---
+        } else if (btn === "feed-upload") {
+            console.log("feed:upload btn clicked");
+            
+            //check for visible imgs
+            if(visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            //set attribute with prototype file
+            gif_class[1].setAttribute("src", "share-gif02.gif");
+            
+            //make visible
+            document.getElementsByClassName(img)[1].style.visibility = "visible";
+            break;
         }
     }
     
