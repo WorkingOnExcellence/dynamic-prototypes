@@ -58,6 +58,32 @@ function showExample(img, btn) {
             alert("prototype has not been created yet");
             break;
             
+        //---FEED BUTTON---
+        } else if (btn === "feed-btn") {
+            console.log("feed btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype has not been created yet");
+            break;
+            
+        //---UPLOAD BUTTON---
+        } else if (btn === "upload-btn") {
+            console.log("upload btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype has not been created yet");
+            break;
+            
         //---EVENTS BUTTON---
         } else if (btn === "events-btn") {
             console.log("events btn clicked");
@@ -71,9 +97,22 @@ function showExample(img, btn) {
             alert("prototype not created");
             break;
             
-            //---CONTACTS BUTTON---
+        //---CONTACTS BUTTON---
         } else if (btn === "contacts-btn") {
             console.log("contacts btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype not created");
+            break;
+            
+        //---MESSAGING BUTTON---
+        } else if (btn === "messaging-btn") {
+            console.log("messaging btn clicked");
             
             //check for visible imgs
             if (visibleCheck('storyboard')) {
@@ -107,11 +146,7 @@ function showExample(img, btn) {
                 document.getElementsByClassName(img)[1].style.visibility = "hidden";
             }
             
-            //set attribute with prototype file
-            gif_class[1].setAttribute("src", "share-gif02.gif");
-            
-            //make visible
-            document.getElementsByClassName(img)[1].style.visibility = "visible";
+            alert("prototype not created");
             break;
         }
     

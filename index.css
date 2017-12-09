@@ -2,6 +2,7 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 button {
@@ -16,6 +17,10 @@ button {
     margin: 0.5%;
 }
 
+button:hover {
+    background-color: forestgreen;
+}
+
 
 .storyboard {
     text-align: center;
@@ -23,12 +28,19 @@ button {
     height: auto;
 }
 
-.share {
-    visibility: hidden;
-}
 
 h1 {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+h3 {
+    color: white;
+}
+
+#prototype-btns {
+    background-color: black;
+    padding-bottom: 3em;
+    padding-top: 1em;
 }
