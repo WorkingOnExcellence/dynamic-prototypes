@@ -97,6 +97,19 @@ function showExample(img, btn) {
             alert("prototype not created");
             break;
             
+        //---SETTINGS BUTTON---
+        } else if (btn === "settings-btn") {
+            console.log("settings btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype not created");
+            break;
+            
         //---CONTACTS BUTTON---
         } else if (btn === "contacts-btn") {
             console.log("contacts btn clicked");
@@ -126,6 +139,19 @@ function showExample(img, btn) {
         //---FEED:UPLOAD TRANSITION---
         } else if (btn === "feed-upload") {
             console.log("feed:upload btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype not created");
+            break;
+            
+        //---FEED:SETTINGS TRANSITION---
+        } else if (btn === "feed-settings") {
+            console.log("feed:settings btn clicked");
             
             //check for visible imgs
             if (visibleCheck('storyboard')) {
