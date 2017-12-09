@@ -21,6 +21,9 @@ button:hover {
     background-color: forestgreen;
 }
 
+.active {
+    background-color: forestgreen;
+}
 
 .storyboard {
     text-align: center;

@@ -1,0 +1,10 @@
+(x) to close prototype demo when done.
+
+
+:active css attribute to keep button highlighted if corresponding demo is visible.
+
+alter the "clicked share-btn to show storyboard" console output to say the actual name of the file
+    "clicked share-btn to show share02.gif in storyboard div"
+
+
+side note: this could be the backbone of the "coming soon" website demo section showcasing our app
