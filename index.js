@@ -17,9 +17,12 @@ function showExample(img, btn) {
     'use strict';
     console.log("clicked " + btn + " to show " + img);
     
-    var a = 0;
-    var gif_class = document.getElementsByClassName(img);
-    var btns_class = document.getElementsByTagName('button');
+    var a, gif_class, btns_class;
+    
+    a = 0;
+    gif_class = document.getElementsByClassName(img);
+    btns_class = document.getElementsByTagName('button');
+    
     
     //identify which button was pressed
     for (a; a < btns_class.length; a++) {
@@ -68,12 +71,25 @@ function showExample(img, btn) {
             alert("prototype not created");
             break;
             
+            //---CONTACTS BUTTON---
+        } else if (btn === "contacts-btn") {
+            console.log("contacts btn clicked");
+            
+            //check for visible imgs
+            if (visibleCheck('storyboard')) {
+                //hide if visible
+                document.getElementsByClassName(img)[1].style.visibility = "hidden";
+            }
+            
+            alert("prototype not created");
+            break;
+            
         //---FEED:UPLOAD TRANSITION---
         } else if (btn === "feed-upload") {
             console.log("feed:upload btn clicked");
             
             //check for visible imgs
-            if(visibleCheck('storyboard')) {
+            if (visibleCheck('storyboard')) {
                 //hide if visible
                 document.getElementsByClassName(img)[1].style.visibility = "hidden";
             }
@@ -81,12 +97,12 @@ function showExample(img, btn) {
             alert("prototype not created");
             break;
         
-    //---CONTACTS:MESSAGING---
-    } else if (btn === "contacts-msg") {
+        //---CONTACTS:MESSAGING---
+        } else if (btn === "contacts-msg") {
             console.log("contacts:messaging btn clicked");
             
             //check for visible imgs
-            if(visibleCheck('storyboard')) {
+            if (visibleCheck('storyboard')) {
                 //hide if visible
                 document.getElementsByClassName(img)[1].style.visibility = "hidden";
             }
@@ -99,6 +115,6 @@ function showExample(img, btn) {
             break;
         }
     
-    
-    console.log("showExample() complete");
+        console.log("showExample() complete");
+    }
 }
